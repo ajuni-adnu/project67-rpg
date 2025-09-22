@@ -517,6 +517,8 @@ Bjorne: “Foolish soul… your resistance amuses me.”
         cout << "\nBjorne: “Impossible… you persist?!”\n" << bossHP << endl;
     } else if (bossHP <= 100) {
         cout << "\nBjorne: “I will DEVOUR YOU!”\n" << bossHP << endl;
+    } else if (bossHP <= 0) {
+        // Hero ending.
     } else {
         cout << "\nERROR.\n" << endl;
     }
