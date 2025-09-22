@@ -328,41 +328,50 @@ Bjorne: “Foolish soul… your resistance amuses me.”
     cout << "JUN: ATK " << playerATK << ", DEF " << playerDEF << ", HP" << playerHP << endl;
     cout << "BJORNE: ATK " << bossATK << ", DEF " << bossDEF << ", HP" << bossHP << endl;
     
-     cout << "Choices: 0/1/3 " << endl;
+     cout << "Choices: 0/1 " << endl;
     
     int turn = 15; 
-    int damage = max(1, playerATK – bossDEF)
+    
+    cout << bossHP << " " << playerHP << endl;
+    
+    int playerDamage = max(1, playerATK – bossDEF);
+    int bossDamage = max(1, bossATK – playerDEF);
+    
+    cout << bossHP << " " << playerHP << endl;
          
     cout << "0 - Fight." << endl;
-    if (hasRapier == TRUE || hasNet == TRUE || hasSunglasses == TRUE || hasAmulet == TRUE) {
+    
+    if (hasRapier != false || hasNet != false || hasSunglasses != false) {
      cout << "1 - Use items." << endl;
     }
-
 
     cin >> choices;
 
     switch(choices) {
-        case 0:
-            damage;
-            break;
         case 1:
-            if (hasRapier == TRUE) {
-                
-            hasRapier = FALSE;    
+            if (hasRapier != false && hasNet != false || hasSunglasses != false) {
+            hasRapier = false;    
+            cout << "skip" << endl;
+                        hasSunglasses = false; 
+                                    hasNet = false;
             }
-            if (hasNet== TRUE) {
-                
-            }
-            if (hasSunglasses == TRUE) {
-                
-            }
-            if (hasAmulet == TRUE) {
-                
-            }
+            
             break;
         default:
-            cout << "You waited out your turn." << endl;
+            damage;
             break;
+    }
+    
+    if (bossHP > 300) {
+        cout << "Bjorne: “Tiny spark. I will crush you slowly.”" << endl;
+    } else if (bossHP >= 199) {
+        cout << "Bjorne: “You sting… nothing more.”" << endl;
+    } else if (bossHP > 100) {
+        cout << "Bjorne: “Impossible… you persist?!”" << endl;
+    } else if (bossHP <= 100) {
+        cout << "Bjorne: “I will DEVOUR YOU!”" << endl;
+    } else {
+        cout << "ERROR." << endl;
     }
 
 
