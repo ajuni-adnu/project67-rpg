@@ -328,6 +328,7 @@ Bjorne: “Foolish soul… your resistance amuses me.”
     int bossDamage = max(1, bossATK - playerDEF);
     int turn = 15; 
     
+    // 15TH TURN.
     // Menu.
     cout << "JUN: ATK " << playerATK << ", DEF " << playerDEF << ", HP" << playerHP << endl;
     cout << "BJORNE: ATK " << bossATK << ", DEF " << bossDEF << ", HP" << bossHP << endl;
@@ -360,17 +361,17 @@ Bjorne: “Foolish soul… your resistance amuses me.”
                          hasRapier = false;
                          break;
                          case 2:
-                         cout << "I used the 90-Caliber Net. I evaded the boss and managed to get a hit.\n" << endl;
+                         cout << "I used the 90-Caliber Net. I evaded the boss and managed to get a hit." << endl;
                          bossHP -= playerDamage;
                          hasNet = false;
                          break;
                          case 3:
-                         cout << "I used the sunglasses. I evaded the boss and managed to get a hit.\n" << endl;
+                         cout << "I used the sunglasses. I evaded the boss and managed to get a hit." << endl;
                          bossHP -= playerDamage;
                          hasSunglasses = false;
                          break;
                          default:
-                         cout << "I didn't waste time deciding and immediately attacked the Bjorne.\n" << endl;
+                         cout << "I didn't waste time deciding and immediately attacked the Bjorne." << endl;
                          bossHP -= playerDamage;
                          playerHP -= bossDamage;
                          break;
@@ -381,12 +382,12 @@ Bjorne: “Foolish soul… your resistance amuses me.”
                      cin >> choices;
                      switch(choices) {
                          case 1:
-                         cout << "I used the 90-Caliber Net. I evaded the boss and managed to get a hit.\n" << endl;
+                         cout << "I used the 90-Caliber Net. I evaded the boss and managed to get a hit." << endl;
                          bossHP -= playerDamage;
                          hasNet = false;
                          break;
                          case 2:
-                         cout << "I used the sunglasses. I evaded the boss and managed to get a hit.\n" << endl;
+                         cout << "I used the sunglasses. I evaded the boss and managed to get a hit." << endl;
                          bossHP -= playerDamage;
                          hasSunglasses = false;
                          break;
@@ -402,12 +403,12 @@ Bjorne: “Foolish soul… your resistance amuses me.”
                      cin >> choices;
                      switch(choices) {
                          case 1:
-                         cout << "I used the sunglasses. I evaded the boss and managed to get a hit.\n" << endl;
+                         cout << "I used the sunglasses. I evaded the boss and managed to get a hit." << endl;
                          bossHP -= playerDamage;
                          hasSunglasses = false;
                          break;
                          default:
-                         cout << "I didn't waste time deciding and immediately attacked the boss.\n" << endl;
+                         cout << "I didn't waste time deciding and immediately attacked the boss." << endl;
                          bossHP -= playerDamage;
                          playerHP -= bossDamage;
                          break;
@@ -418,12 +419,12 @@ Bjorne: “Foolish soul… your resistance amuses me.”
                      cin >> choices;
                      switch(choices) {
                          case 1:
-                         cout << "I used the 90-Caliber Net. I evaded the boss and managed to get a hit.\n" << endl;
+                         cout << "I used the 90-Caliber Net. I evaded the boss and managed to get a hit." << endl;
                          bossHP -= playerDamage;
                          hasNet = false;
                          break;
                          default:
-                         cout << "I didn't waste time deciding and immediately attacked the boss.\n" << endl;
+                         cout << "I didn't waste time deciding and immediately attacked the boss." << endl;
                          bossHP -= playerDamage;
                          playerHP -= bossDamage;
                          break;
@@ -434,13 +435,12 @@ Bjorne: “Foolish soul… your resistance amuses me.”
                      cin >> choices;
                      switch(choices) {
                          case 1:
-                         cout << "I used the Divine Rapier.\n" << endl;
+                         cout << "I used the Divine Rapier." << endl;
                          bossHP -= 275;
-                         cout << bossHP << endl;
                          hasRapier = false;
                          break;
                          case 2:
-                         cout << "I used the 90-Caliber Net. I evaded the boss and managed to get a hit.\n" << endl;
+                         cout << "I used the 90-Caliber Net. I evaded the boss and managed to get a hit." << endl;
                          bossHP -= playerDamage;
                          hasNet = false;
                          break;
@@ -456,18 +456,17 @@ Bjorne: “Foolish soul… your resistance amuses me.”
                      cin >> choices;
                      switch(choices) {
                          case 1:
-                         cout << "I used the Divine Rapier.\n" << endl;
+                         cout << "I used the Divine Rapier." << endl;
                          bossHP -= 275;
-                         cout << bossHP << endl;
                          hasRapier = false;
                          break;
                          case 2:
-                         cout << "I used the sunglasses. I evaded the boss and managed to get a hit.\n" << endl;
+                         cout << "I used the sunglasses. I evaded the boss and managed to get a hit." << endl;
                          bossHP -= playerDamage;
                          hasSunglasses = false;
                          break;
                          default:
-                         cout << "I didn't waste time deciding and immediately attacked the boss.\n" << endl;
+                         cout << "I didn't waste time deciding and immediately attacked the boss." << endl;
                          bossHP -= playerDamage;
                          playerHP -= bossDamage;
                          break;
@@ -478,78 +477,267 @@ Bjorne: “Foolish soul… your resistance amuses me.”
                      cin >> choices;
                      switch(choices) {
                          case 1:
-                         cout << "I used the Divine Rapier.\n" << endl;
+                         cout << "I used the Divine Rapier." << endl;
                          bossHP -= 275;
-                         cout << bossHP << endl;
                          hasRapier = false;
                          break;
                          default:
-                         cout << "I didn't waste time deciding and immediately attacked the boss.\n" << endl;
+                         cout << "I didn't waste time deciding and immediately attacked the boss." << endl;
                          bossHP -= playerDamage;
                          playerHP -= bossDamage;
                          break;
                      }
             } else {
-                cout << "ELSE" << endl;
                 bossHP -= playerDamage;
                 playerHP -= bossDamage;
             }
             
         }
         break;
-        case 2:
-            cout << "case one" << endl;
-            bossHP -= playerDamage;
-            playerHP -= bossDamage;
-            break;
         default:
-        cout << "DEFAULT" << endl;
             bossHP -= playerDamage;
             playerHP -= bossDamage;
-            break;
+        break;
     }
-    
+
     if (bossHP > 300) {
-        cout << "\nBjorne: “Tiny spark. I will crush you slowly.”\n" << bossHP << endl;
+        cout << "\nBjorne: “Tiny spark. I will crush you slowly.”\n" << endl;
     } else if (bossHP >= 200) {
-        cout << "\nBjorne: “You sting… nothing more.”\n" << bossHP << endl;
+        cout << "\nBjorne: “You sting… nothing more.”\n" << endl;
     } else if (bossHP >= 100) {
-        cout << "\nBjorne: “Impossible… you persist?!”\n" << bossHP << endl;
+        cout << "\nBjorne: “Impossible… you persist?!”\n" << endl;
     } else if (bossHP <= 100) {
-        cout << "\nBjorne: “I will DEVOUR YOU!”\n" << bossHP << endl;
-    } else if (bossHP <= 0) {
-        // Hero ending.
-    } else {
-        cout << "\nERROR.\n" << endl;
+        cout << "\nBjorne: “I will DEVOUR YOU!”\n" << endl;
     }
     
-    if (hasAmulet = true && playerHP <= 0) {
-        cout << "The amulet broke, I'm badly injured." << endl;
-        // cout << "HP" << playerHP << endl;
-        // playerHP = min(1, bossATK - playerDEF);
-        // cout << "HP" << playerHP << endl;
+    if (hasAmulet == true && playerHP <= 0) {
+        cout << "The amulet broke, I'm badly injured.\n" << endl;
         playerHP = 1;
-        cout << "HP" << playerHP << endl;
         hasAmulet = false;
     }
     
+    // TEST running
+    
+    while ((turn > 0 && playerHP > 0) && bossHP > 0) {
     turn--;
-    if ((turn != 0 && playerHP != 0) && bossHP > 0) {
-        cout << "JUN: ATK " << playerATK << ", DEF " << playerDEF << ", HP" << playerHP << endl;
-        cout << "BJORNE: ATK " << bossATK << ", DEF " << bossDEF << ", HP" << bossHP << endl;
-        cout << turn << " chances left." << endl;
-        if (hasRapier != false || hasNet != false || hasSunglasses != false) {
-        cout << "Choices: 0/1 " << endl;
-        } else {
-           cout << "Choices: 0" << endl; 
+    cout << "JUN: ATK " << playerATK << ", DEF " << playerDEF << ", HP" << playerHP << endl;
+    cout << "BJORNE: ATK " << bossATK << ", DEF " << bossDEF << ", HP" << bossHP << endl;
+    cout << turn << " chances left." << endl;
+    if (hasRapier != false || hasNet != false || hasSunglasses != false) {
+    cout << "Choices: 0/1 " << endl;
+    } else {
+       cout << "Choices: 0" << endl; 
+    }
+    
+    cout << "0 - Fight." << endl;
+    if (hasRapier != false || hasNet != false || hasSunglasses != false) {
+     cout << "1 - Use items.\n" << endl;
+    }
+    
+    cout << "My choice is ";
+    cin >> choices;
+    switch(choices) {
+        case 1:
+            if (hasRapier != false || hasNet != false || hasSunglasses != false) {
+            cout << "\nWhich item to choose? \nInventory:" << endl;
+                if (hasRapier != false && (hasNet != false && hasSunglasses != false)) {
+                     cout << "1. Divine Rapier\n2. Net\n3. Sunglasses" << endl;
+                     cout << "\nMy choice is ";
+                     cin >> choices;
+                     switch(choices) {
+                         case 1:
+                         cout << "I used the Divine Rapier." << endl;
+                         bossHP -= 275;
+                         hasRapier = false;
+                         break;
+                         case 2:
+                         cout << "I used the 90-Caliber Net. I evaded the boss and managed to get a hit." << endl;
+                         bossHP -= playerDamage;
+                         hasNet = false;
+                         break;
+                         case 3:
+                         cout << "I used the sunglasses. I evaded the boss and managed to get a hit." << endl;
+                         bossHP -= playerDamage;
+                         hasSunglasses = false;
+                         break;
+                         default:
+                         cout << "I didn't waste time deciding and immediately attacked the Bjorne." << endl;
+                         bossHP -= playerDamage;
+                         playerHP -= bossDamage;
+                         break;
+                     }
+                } else if (hasRapier != true && (hasNet != false && hasSunglasses != false)) {
+                     cout << "1. Net\n2. Sunglasses" << endl;
+                     cout << "\nMy choice is ";
+                     cin >> choices;
+                     switch(choices) {
+                         case 1:
+                         cout << "I used the 90-Caliber Net. I evaded the boss and managed to get a hit." << endl;
+                         bossHP -= playerDamage;
+                         hasNet = false;
+                         break;
+                         case 2:
+                         cout << "I used the sunglasses. I evaded the boss and managed to get a hit." << endl;
+                         bossHP -= playerDamage;
+                         hasSunglasses = false;
+                         break;
+                         default:
+                         cout << "I didn't waste time deciding and immediately attacked the boss." << endl;
+                         bossHP -= playerDamage;
+                         playerHP -= bossDamage;
+                         break;
+                     }     
+                } else if (hasRapier != true && (hasNet != true && hasSunglasses != false)) {
+                     cout << "1. Sunglasses" << endl;
+                     cout << "\nMy choice is ";
+                     cin >> choices;
+                     switch(choices) {
+                         case 1:
+                         cout << "I used the sunglasses. I evaded the boss and managed to get a hit." << endl;
+                         bossHP -= playerDamage;
+                         hasSunglasses = false;
+                         break;
+                         default:
+                         cout << "I didn't waste time deciding and immediately attacked the boss." << endl;
+                         bossHP -= playerDamage;
+                         playerHP -= bossDamage;
+                         break;
+                     }   
+                } else if (hasRapier != true && (hasNet != false && hasSunglasses != true)) {
+                     cout << "1. Net" << endl;
+                     cout << "\nMy choice is ";
+                     cin >> choices;
+                     switch(choices) {
+                         case 1:
+                         cout << "I used the 90-Caliber Net. I evaded the boss and managed to get a hit." << endl;
+                         bossHP -= playerDamage;
+                         hasNet = false;
+                         break;
+                         default:
+                         cout << "I didn't waste time deciding and immediately attacked the boss." << endl;
+                         bossHP -= playerDamage;
+                         playerHP -= bossDamage;
+                         break;
+                     }   
+                } else if (hasRapier != false && (hasNet != false && hasSunglasses != true)) {
+                     cout << "1. Divine Rapier\n2. Net" << endl;
+                     cout << "\nMy choice is ";
+                     cin >> choices;
+                     switch(choices) {
+                         case 1:
+                         cout << "I used the Divine Rapier." << endl;
+                         bossHP -= 275;
+                         hasRapier = false;
+                         break;
+                         case 2:
+                         cout << "I used the 90-Caliber Net. I evaded the boss and managed to get a hit." << endl;
+                         bossHP -= playerDamage;
+                         hasNet = false;
+                         break;
+                         default:
+                         cout << "I didn't waste time deciding and immediately attacked the boss." << endl;
+                         bossHP -= playerDamage;
+                         playerHP -= bossDamage;
+                         break;
+                     }
+                } else if (hasRapier != false && (hasNet != true && hasSunglasses != false)) {
+                     cout << "1. Divine Rapier\n2. Sunglasses" << endl;
+                     cout << "\nMy choice is ";
+                     cin >> choices;
+                     switch(choices) {
+                         case 1:
+                         cout << "I used the Divine Rapier." << endl;
+                         bossHP -= 275;
+                         hasRapier = false;
+                         break;
+                         case 2:
+                         cout << "I used the sunglasses. I evaded the boss and managed to get a hit." << endl;
+                         bossHP -= playerDamage;
+                         hasSunglasses = false;
+                         break;
+                         default:
+                         cout << "I didn't waste time deciding and immediately attacked the boss." << endl;
+                         bossHP -= playerDamage;
+                         playerHP -= bossDamage;
+                         break;
+                     }
+                } else if (hasRapier != false && (hasNet != true && hasSunglasses != true)) {
+                     cout << "1. Divine Rapier" << endl;
+                     cout << "\nMy choice is ";
+                     cin >> choices;
+                     switch(choices) {
+                         case 1:
+                         cout << "I used the Divine Rapier." << endl;
+                         bossHP -= 275;
+                         hasRapier = false;
+                         break;
+                         default:
+                         cout << "I didn't waste time deciding and immediately attacked the boss." << endl;
+                         bossHP -= playerDamage;
+                         playerHP -= bossDamage;
+                         break;
+                     }
+            } else {
+                bossHP -= playerDamage;
+                playerHP -= bossDamage;
+            }
+            
         }
-        
-        cout << "0 - Fight." << endl;
-        if (hasRapier != false || hasNet != false || hasSunglasses != false) {
-         cout << "1 - Use items.\n" << endl;
-        }
+        break;
+        default:
+            bossHP -= playerDamage;
+            playerHP -= bossDamage;
+        break;
     }
 
+    if (bossHP > 300) {
+        cout << "\nBjorne: “Tiny spark. I will crush you slowly.”\n" << endl;
+    } else if (bossHP >= 200) {
+        cout << "\nBjorne: “You sting… nothing more.”\n" << endl;
+    } else if (bossHP >= 100) {
+        cout << "\nBjorne: “Impossible… you persist?!”\n" << endl;
+    } else if (bossHP <= 100) {
+        cout << "\nBjorne: “I will DEVOUR YOU!”\n" << endl;
+    }
+    
+    if (hasAmulet == true && playerHP <= 0) {
+        cout << "\nThe amulet broke, I'm badly injured.\n" << endl;
+        playerHP = 1;
+        hasAmulet = false;
+    }
+    }
+    
+    // 14TH TURN
+    
+    // turn--;
+    // if ((turn > 0 && playerHP > 0) && bossHP > 0) {
+
+    // }
+    
+    // 13TH TURN
+    // 12TH TURN
+    // 11TH TURN
+    // 10TH TURN
+    // 9TH TURN
+    // 8TH TURN
+    // 7TH TURN
+    // 6TH TURN
+    // 5TH TURN
+    // 3RD TURN
+    // 2ND TURN
+    // 1ST TURN
+
+
+    // FIGHT is over, conclude either boss is dead, jun is dead, or fatigued: display the ending
+    if (bossHP <= 0) {
+        cout << "Jun slays Bjorne...\n The shinigami arrive, \n Jun is invited to the Academy." << endl; 
+    } else if (turn <= 0) {
+        cout << "*Your vision fades to black.*\n*Jun collapses, the shinigami arrives too late.*\n*The district is saved, Jun dies a hero.*" << endl;
+    } else if (playerHP <= 0) {
+        cout << "*Your vision fades to black.*\n*Jun dies, but his stand delays Bjorne until shinigami finishes it.*\n *Jun was then remembered as a hero.*" << endl;
+    } else {
+        cout << "Error BOSSHP " << bossHP << "turns" << turn << "PlayerHP" << playerHP <<endl;
+    }
 
 /*
 During the battle, Bjorne taunts you as his health drops:
