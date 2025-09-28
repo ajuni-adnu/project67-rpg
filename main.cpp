@@ -2,6 +2,11 @@
 #include <stdlib.h>
 using namespace std;
 
+string key;
+int choices;
+bool hasRapier, hasNet, hasSunglasses, hasAmulet, hasRustbite = false;
+
+
 int playerHP = 40;
 int playerATK = 12;
 int playerDEF = 5;
@@ -9,11 +14,6 @@ int playerDEF = 5;
 int bossHP = 400;
 int bossATK = 21;
 int bossDEF = 20;
-
-bool hasRapier, hasNet, hasSunglasses, hasAmulet, hasRustbite = false;
-
-string key;
-int choices;
 
 int main()
 {
@@ -58,7 +58,7 @@ Choose:
 3. Risky — “Give me everything you have!” (+11 ATK, +3 DEF, −5 HP)
 
 )";
-    cout << "\nMy choice is ";
+    cout << "My choice is ";
     cin >> choices;
 
     switch(choices) {
@@ -87,8 +87,9 @@ Choose:
 1. Safe — “Just give me something simple.” (+4 ATK)
 2. Mid — “Make me sturdier.” (+1 DEF, −2 HP)
 3. Risky — “Push the limits!” (+5 ATK, +3 DEF, −5 HP, gain Rustbite: −6 Boss DEF)
+
 )";
-    cout << "\nMy choice is ";
+    cout << "My choice is ";
     cin >> choices;
 
     switch(choices) {
