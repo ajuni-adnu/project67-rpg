@@ -17,7 +17,7 @@ int bossDEF = 20;
 
 int main()
 {
-    // Scene 0: Title screen
+    // Scene 0 — Introduction
 
     cout << "\n              [Title Screen]" << endl;
 cout << R"(
@@ -35,6 +35,8 @@ Press any key to continue…
 
     cin >> key;
 
+    // Scene 1 — Prologue (District 67)
+
 cout << R"(
 District 67, outskirts of Rukongai.
 
@@ -47,6 +49,8 @@ Press any key to continue...
 )";
 
     cin >> key;
+
+    // Scene 2 — The Saint (Hanae)
 
 cout << R"(
 Hanae, the district’s wandering saint, approaches you.
