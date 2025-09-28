@@ -19,94 +19,94 @@ int main()
 {
     // Scene 0: Title screen
 
-//     cout << "\n              [Title Screen]" << endl;
-// cout << R"(
-// BLEACH: District 67 — A Text-Based Adventure
-// Disclaimer: This is a fan-made educational project. Bleach is created by Tite Kubo.
-// All rights belong to their respective owners. For classroom use only.
+    cout << "\n              [Title Screen]" << endl;
+cout << R"(
+BLEACH: District 67 — A Text-Based Adventure
+Disclaimer: This is a fan-made educational project. Bleach is created by Tite Kubo.
+All rights belong to their respective owners. For classroom use only.
 
-// You are Jun Arashi, a soul living in District 67 of Rukongai.
-// One night, a terrible presence descends — a rogue Hollow stalks the district.
-// You must prepare yourself for the coming battle.
+You are Jun Arashi, a soul living in District 67 of Rukongai.
+One night, a terrible presence descends — a rogue Hollow stalks the district.
+You must prepare yourself for the coming battle.
 
-// Press any key to continue…
+Press any key to continue…
 
-// )";
+)";
 
-//     cin >> key;
+    cin >> key;
 
-// cout << R"(
-// District 67, outskirts of Rukongai.
+cout << R"(
+District 67, outskirts of Rukongai.
 
-// Jun stands in a dark alley as screams echo through the streets.
-// The night sky trembles as a Hollow’s roar shakes the rooftops.
-// Jun clenches his fists — there is no running now.
+Jun stands in a dark alley as screams echo through the streets.
+The night sky trembles as a Hollow’s roar shakes the rooftops.
+Jun clenches his fists — there is no running now.
 
-// Press any key to continue...
+Press any key to continue...
 
-// )";
+)";
 
-//     cin >> key;
+    cin >> key;
 
-// cout << R"(
-// Hanae, the district’s wandering saint, approaches you.
+cout << R"(
+Hanae, the district’s wandering saint, approaches you.
 
-// Hanae: “You look pale, Jun. The night is cruel… let me bless you with light.”
-// Choose:
-// 1. Safe — “Just a little strength will do.” (+4 ATK)
-// 2. Mid — “I’ll take whatever you can give.” (+1 ATK, +1 DEF, +7 HP)
-// 3. Risky — “Give me everything you have!” (+11 ATK, +3 DEF, −5 HP)
+Hanae: “You look pale, Jun. The night is cruel… let me bless you with light.”
+Choose:
+1. Safe — “Just a little strength will do.” (+4 ATK)
+2. Mid — “I’ll take whatever you can give.” (+1 ATK, +1 DEF, +7 HP)
+3. Risky — “Give me everything you have!” (+11 ATK, +3 DEF, −5 HP)
 
-// )";
-//     cout << "\nMy choice is ";
-//     cin >> choices;
+)";
+    cout << "\nMy choice is ";
+    cin >> choices;
 
-//     switch(choices) {
-//         case 1:
-//             playerATK += 4;
-//             break;
-//         case 2:
-//             playerATK++;
-//             playerDEF++;
-//             playerHP += 7;
-//             break;
-//         case 3:
-//             playerATK += 11;
-//             playerDEF += 3;
-//             playerHP -= 5;
-//             break;
-//     }
+    switch(choices) {
+        case 1:
+            playerATK += 4;
+            break;
+        case 2:
+            playerATK++;
+            playerDEF++;
+            playerHP += 7;
+            break;
+        case 3:
+            playerATK += 11;
+            playerDEF += 3;
+            playerHP -= 5;
+            break;
+    }
 
-//     // Scene 3 — The Tinkerer (Riku)
+    // Scene 3 — The Tinkerer (Riku)
 
-// cout << R"(
-// You find Riku, a tinkerer surrounded by scraps of strange metal.
+cout << R"(
+You find Riku, a tinkerer surrounded by scraps of strange metal.
 
-// Riku: “You’ll need more than fists against a Hollow. I can forge something quick.”
-// Choose:
-// 1. Safe — “Just give me something simple.” (+4 ATK)
-// 2. Mid — “Make me sturdier.” (+1 DEF, −2 HP)
-// 3. Risky — “Push the limits!” (+5 ATK, +3 DEF, −5 HP, gain Rustbite: −6 Boss DEF)
-// )";
-//     cout << "\nMy choice is ";
-//     cin >> choices;
+Riku: “You’ll need more than fists against a Hollow. I can forge something quick.”
+Choose:
+1. Safe — “Just give me something simple.” (+4 ATK)
+2. Mid — “Make me sturdier.” (+1 DEF, −2 HP)
+3. Risky — “Push the limits!” (+5 ATK, +3 DEF, −5 HP, gain Rustbite: −6 Boss DEF)
+)";
+    cout << "\nMy choice is ";
+    cin >> choices;
 
-//     switch(choices) {
-//         case 1:
-//             playerATK += 4;
-//             break;
-//         case 2:
-//             playerDEF++;
-//             playerHP -= 2;
-//             break;
-//         case 3:
-//             playerATK += 5;
-//             playerDEF += 3;
-//             playerHP -= 5;
-//             hasRustbite = true;
-//             bossDEF -= 6;
-//             break;
-//     }
+    switch(choices) {
+        case 1:
+            playerATK += 4;
+            break;
+        case 2:
+            playerDEF++;
+            playerHP -= 2;
+            break;
+        case 3:
+            playerATK += 5;
+            playerDEF += 3;
+            playerHP -= 5;
+            hasRustbite = true;
+            bossDEF -= 6;
+            break;
+    }
 
     // Scene 4 — Sister Midori (Shrine)
 
@@ -137,7 +137,7 @@ Choose:
             break;
     }
 
-    // Scene 5 ? Yumi the Smuggler
+    // Scene 5 - Yumi the Smuggler
 
 cout << R"(
 A shadow in the corner alley beckons you. Yumi, the smuggler, grins.
@@ -169,65 +169,65 @@ Choose:
             break;
     }
     
-//     // Scene 6 — Kaji the Peddler
+    // Scene 6 — Kaji the Peddler
 
-// cout << R"(
-// An old peddler, Kaji, rattles his cart of bottles and charms.
+cout << R"(
+An old peddler, Kaji, rattles his cart of bottles and charms.
 
-// Kaji: “Spare change for power? Every blessing has a price.”
-// Choose:
-// 1. Safe — “A minor boost.” (+4 ATK)
-// 2. Mid — “Something stronger.” (+8 ATK, −2 HP)
-// 3. Risky — “Everything you’ve got!” (+15 ATK, −2 DEF, −5 HP)
+Kaji: “Spare change for power? Every blessing has a price.”
+Choose:
+1. Safe — “A minor boost.” (+4 ATK)
+2. Mid — “Something stronger.” (+8 ATK, −2 HP)
+3. Risky — “Everything you’ve got!” (+15 ATK, −2 DEF, −5 HP)
 
-// )";
-//     cout << "My choice is ";
-//     cin >> choices;
+)";
+    cout << "My choice is ";
+    cin >> choices;
 
-//     switch(choices) {
-//         case 1:
-//             playerATK += 4;
-//             break;
-//         case 2:
-//             playerATK += 8;
-//             playerHP -= 2;
-//             break;
-//         case 3:
-//             playerATK += 15;
-//             playerDEF -= 2;
-//             playerHP -= 5;
-//             break;
-//     }
+    switch(choices) {
+        case 1:
+            playerATK += 4;
+            break;
+        case 2:
+            playerATK += 8;
+            playerHP -= 2;
+            break;
+        case 3:
+            playerATK += 15;
+            playerDEF -= 2;
+            playerHP -= 5;
+            break;
+    }
     
-//     // Scene 7 — Aiko the Child
+    // Scene 7 — Aiko the Child
     
-// cout << R"(
-// Aiko, a small child, tugs at your sleeve with pleading eyes.
+cout << R"(
+Aiko, a small child, tugs at your sleeve with pleading eyes.
 
-// Aiko: “Please… help us. You’re the only one who can stand against the Hollow.”
-// Choose:
-// 1. Safe — “I’ll do my best.” (+2 ATK)
-// 2. Mid — “I’ll push myself harder.” (+1 ATK, +1 DEF, −1 HP)
-// 3. Risky — “I’ll protect everyone at any cost!” (+8 ATK, +3 DEF, −5 HP)
+Aiko: “Please… help us. You’re the only one who can stand against the Hollow.”
+Choose:
+1. Safe — “I’ll do my best.” (+2 ATK)
+2. Mid — “I’ll push myself harder.” (+1 ATK, +1 DEF, −1 HP)
+3. Risky — “I’ll protect everyone at any cost!” (+8 ATK, +3 DEF, −5 HP)
 
-// )";
-//     cout << "My choice is ";
-//     cin >> choices;
-//     switch(choices) {
-//         case 1:
-//             playerATK += 2;
-//             break;
-//         case 2:
-//             playerATK++;
-//             playerDEF++;
-//             playerHP--;
-//             break;
-//         case 3:
-//             playerATK += 8;
-//             playerDEF += 3;
-//             playerHP -= 5;
-//             break;
-//     }
+)";
+    cout << "My choice is ";
+    cin >> choices;
+    switch(choices) {
+        case 1:
+            playerATK += 2;
+            break;
+        case 2:
+            playerATK++;
+            playerDEF++;
+            playerHP--;
+            break;
+        case 3:
+            playerATK += 8;
+            playerDEF += 3;
+            playerHP -= 5;
+            break;
+    }
     
     // Scene 8 — Master Renga
 
@@ -328,6 +328,7 @@ Bjorne: “Foolish soul… your resistance amuses me.”
     int bossDamage = max(1, bossATK - playerDEF);
     int turn = 15; 
     
+    // BOSS FIGHT: BJORNE
     // 15TH TURN.
     // Menu.
     
@@ -2978,11 +2979,11 @@ Bjorne: “Foolish soul… your resistance amuses me.”
     // CONCLUSION
 
     if (bossHP <= 0) {
-        cout << "Jun slays Bjorne...\n The shinigami arrive, \n Jun is invited to the Academy." << endl; 
+        cout << "\"Jun slays Bjorne...\"\n The shinigami arrive, \n  Jun is then invited to the Academy." << endl; 
     } else if (turn <= 0) {
-        cout << "*Your vision fades to black.*\n*Jun collapses, the shinigami arrives too late.*\n*The district is saved, Jun dies a hero.*" << endl;
+        cout << "*Your vision fades to black.*\n *Jun collapses, the shinigami arrives too late.*\n  *The district is saved, Jun dies a hero.*" << endl;
     } else if (playerHP <= 0) {
-        cout << "*Your vision fades to black.*\n*Jun dies, but his stand delays Bjorne until the shinigami finishes it.*\n *Jun was then remembered as a hero.*" << endl;
+        cout << "*Your vision fades to black.*\n *Jun dies, but his stand delays Bjorne until the shinigami finishes it.*\n  \"Jun was then remembered as a hero.\"" << endl;
     } 
 
     return 0;
